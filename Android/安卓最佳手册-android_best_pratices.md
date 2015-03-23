@@ -1,6 +1,6 @@
-原文来自：[Best practices in Android development]{https://github.com/futurice/android-best-practices}
+原文来自：[Best practices in Android development](https://github.com/futurice/android-best-practices)
 
-通过学习下面的手册可以帮助我们免于再造轮子。如果你对iOS或WP开发感兴趣，可参考iOS Good Practices和Windows App Development Best Practices 文档。（来源于Futurice网站中Android开发者的经验）
+通过学习下面的手册可以帮助我们免于再造轮子。如果你对iOS或WP开发感兴趣，可参考[iOS Good Practices](https://github.com/futurice/ios-good-practices)和[Windows App Development Best Practices](https://github.com/futurice/ios-good-practices) 文档。（来源于Futurice网站中Android开发者的经验）
 一、几句话
 使用Gradle及其推荐的项目框架
 
@@ -10,7 +10,7 @@
 
 使用Jackson库来解析JSON数据
 
-避免Guava并出于Dalvik 65K methods limit不要使用过多的库
+避免[Guava](https://github.com/google/guava)并出于[Dalvik 65K methods limit](https://medium.com/@rotxed/dex-skys-the-limit-no-65k-methods-is-28e6cb40cf71)不要使用过多的库
 
 使用Fragment来绘制UI界面
 
@@ -40,7 +40,7 @@ Activity主要用来管理Fragment
 Android SDK
 把你的Android SDK放置在你的主目录里或其他与应用无关的地方。一些IDEs在安装的时候会把SDK关联上，并把SDK放在IDE的同一个目录下。当你需要升级（重装）IDE或者更换IDE时你就会发现糟糕之处啦。另外，如果你的IDE在一个user账户下而不是在root下运行的话，就不要把SDK放在系统级目录下，否则在使用时需要 sudo 权限，
 Build System
-默认的选择是 Gradle。Ant限制比较多而且太大。使用Gradle，你可以很轻易的做到：
+默认的选择是 [Gradle](http://tools.android.com/tech-docs/new-build-system)。Ant限制比较多而且太大。使用Gradle，你可以很轻易的做到：
 -编译不同的flavours 或应用的 variants
 -创建简单的 类-脚本 任务
 
